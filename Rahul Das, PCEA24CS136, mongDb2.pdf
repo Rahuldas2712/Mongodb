@@ -1,0 +1,1253 @@
+|     minimumCGPA: 7.0,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 302,
+|     companyName: "Infosys",
+|     driveDate: "2026-09-18",
+|     eligibleDepartments: ["CSE", "IT", "ECE", "EEE"],
+|     minimumCGPA: 6.5,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 303,
+|     companyName: "Wipro",
+|     driveDate: "2026-09-20",
+|     eligibleDepartments: ["CSE", "IT", "ECE"],
+|     minimumCGPA: 6.5,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 304,
+|     companyName: "Accenture",
+|     driveDate: "2026-09-25",
+|     eligibleDepartments: ["CSE", "IT"],
+|     minimumCGPA: 7.5,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 305,
+|     companyName: "Deloitte",
+|     driveDate: "2026-09-28",
+|     eligibleDepartments: ["CSE", "IT"],
+|     minimumCGPA: 8.0,
+|     status: "Upcoming"
+|   }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6aa0cd892c6c7749ad6f2017'),
+    '1': ObjectId('6aa0cd892c6c7749ad6f2018'),
+    '2': ObjectId('6aa0cd892c6c7749ad6f2019'),
+    '3': ObjectId('6aa0cd892c6c7749ad6f201a'),
+    '4': ObjectId('6aa0cd892c6c7749ad6f201b')
+  }
+}
+Atlas atlas-dwq3vv-shard-0 [primary] student> db.placementDrives.insertMany([
+|   {
+|     driveId: 301,
+|     companyName: "TCS",
+|     driveDate: "2026-09-15",
+|     eligibleDepartments: ["CSE", "IT", "ECE"],
+|     minimumCGPA: 7.0,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 302,
+|     companyName: "Infosys",
+|     driveDate: "2026-09-18",
+|     eligibleDepartments: ["CSE", "IT", "ECE", "EEE"],
+|     minimumCGPA: 6.5,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 303,
+|     companyName: "Wipro",
+|     driveDate: "2026-09-20",
+|     eligibleDepartments: ["CSE", "IT", "ECE"],
+|     minimumCGPA: 6.5,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 304,
+|     companyName: "Accenture",
+|     driveDate: "2026-09-25",
+|     eligibleDepartments: ["CSE", "IT"],
+|     minimumCGPA: 7.5,
+|     status: "Upcoming"
+|   },
+|   {
+|     driveId: 305,
+|     companyName: "Deloitte",
+|     driveDate: "2026-09-28",
+|     eligibleDepartments: ["CSE", "IT"],
+|     minimumCGPA: 8.0,
+|     status: "Upcoming"
+|   }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6aa0cdc02c6c7749ad6f201c'),
+    '1': ObjectId('6aa0cdc02c6c7749ad6f201d'),
+    '2': ObjectId('6aa0cdc02c6c7749ad6f201e'),
+    '3': ObjectId('6aa0cdc02c6c7749ad6f201f'),
+    '4': ObjectId('6aa0cdc02c6c7749ad6f2020')
+  }
+}
+Atlas atlas-dwq3vv-shard-0 [primary] student> 
+ *  History restored 
+
+PS C:\Users\das96\Downloads\mongosh-2.10.0-win32-x64> mongosh "mongodb+srv://cluster0.efdnw2t.mongodb.net/" --apiVersion 1 --username das960040_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6aa0dd66ac457069b6219cae
+Connecting to:          mongodb+srv://<credentials>@cluster0.efdnw2t.mongodb.net/?appName=mongosh+2.10.0
+Using MongoDB:          8.0.32 (API Version 1)
+Using Mongosh:          2.10.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-dwq3vv-shard-0 [primary] test> use ecomDB
+switched to db ecomDB
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> for (let i = 1; i <= 50; i++) {
+| 
+|     db.products.insertOne({
+|         productId: i,
+|         productName: "Product " + i ,
+|         category:
+|             i % 5 === 0 ? "Laptop" :
+|             i % 5 === 1 ? "Mobile" :
+|             i % 5 === 2 ? "Headphones" :
+|             i % 5 === 3 ? "Keyboard" :
+|                           "Mouse",
+| 
+|         brand:
+|             i % 3 === 0 ? "Dell" :
+|             i % 3 === 1 ? "Samsung" :
+|                           "HP",
+| 
+|         price: 1000 + (i * 500),
+| 
+|         stock: 10 + i,
+| 
+|         rating: 3 + ((i % 3) * 0.5),
+| 
+|         inStock: i % 4 !== 0,
+| 
+|         tags: [
+|             "electronics",
+|             i % 2 === 0 ? "featured" : "new"
+|         ],
+| 
+|         seller: {
+|             sellerId: 1000 + i,
+|             sellerName: "Seller " + i
+|         },
+| 
+|         createdAt: new Date()
+|     });
+| }
+
+{
+  acknowledged: true,
+  insertedId: ObjectId('6aa0de04ac457069b6219ce0')
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> 
+
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> show dbs
+ecomDB         72.00 KiB
+sample_mflix  229.03 MiB
+student       288.00 KiB
+admin                0 B
+local                0 B
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> show ecomDB
+MongoshInvalidInputError: [COMMON-10001] 'ecomDB' is not a valid argument for "show".
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> show collections
+products
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> show documents
+MongoshInvalidInputError: [COMMON-10001] 'documents' is not a valid argument for "show".
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> show document
+MongoshInvalidInputError: [COMMON-10001] 'document' is not a valid argument for "show".
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> use ecomDB
+already on db ecomDB
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> show collections
+products
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.myCollectionName.findOne()
+| 
+null
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> 
+
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.ecomDB.findOne()
+null
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> // 1. ecomDB डेटाबेस में जाए
+| use ecomDB
+| 
+| // 2. 10 सैंपल प्रोडक्ट्स इंसर्ट करे
+| db.products.insertMany([
+|   {
+|     "productsID": "PROD001",
+|     "productName": "AlphaSonic Wireless Headphones",
+|     "category": "Electronics",
+|     "brand": "AlphaSonic",
+|     "price": 129.99,
+|     "stock": 45,
+|     "rating": 4.7,
+|     "instock": true,
+|     "tags": ["audio", "wireless", "headphones", "gadgets"],
+|     "seller": "AlphaRetail India"
+|   },
+|   {
+|     "productsID": "PROD002",
+|     "productName": "Stratus Men's Running Shoes",
+|     "category": "Footwear",
+|     "brand": "Stratus",
+|     "price": 79.50,
+|     "stock": 120,
+|     "rating": 4.3,
+|     "instock": true,
+|     "tags": ["shoes", "sports", "running", "men-fashion"],
+|     "seller": "FitWear Store"
+|   },
+|   {
+|     "productsID": "PROD003",
+|     "productName": "HydroFlask 1L Water Bottle",
+|     "category": "Kitchen & Dining",
+|     "brand": "HydroFlask",
+|     "price": 34.00,
+|     "stock": 0,
+|     "rating": 4.8,
+|     "instock": false,
+|     "tags": ["bottle", "eco-friendly", "kitchen", "fitness"],
+|     "seller": "CloudTail Net"
+|   },
+|   {
+|     "productsID": "PROD004",
+|     "productName": "SwiftTab Pro 10-inch Tablet",
+|     "category": "Electronics",
+|     "brand": "SwiftTab",
+|     "price": 299.00,
+|     "stock": 15,
+|     "rating": 4.2,
+|     "instock": true,
+|     "tags": ["tablet", "android", "electronics", "work-from-home"],
+|     "seller": "AlphaRetail India"
+|   },
+|   {
+|     "productsID": "PROD005",
+|     "productName": "Organic Green Tea Mint Pack",
+|     "category": "Grocery",
+|     "brand": "PureLeaf",
+|     "price": 12.99,
+|     "stock": 250,
+|     "rating": 4.6,
+|     "instock": true,
+|     "tags": ["tea", "organic", "grocery", "healthy"],
+|     "seller": "OrganicMart"
+|   },
+|   {
+|     "productsID": "PROD006",
+|     "productName": "Ergonomic Office Chair",
+|     "category": "Furniture",
+|     "brand": "ComfortPlus",
+|     "price": 189.99,
+|     "stock": 8,
+|     "rating": 4.5,
+|     "instock": true,
+|     "tags": ["chair", "furniture", "office", "ergonomic"],
+|     "seller": "Zenith Furniture"
+|   },
+|   {
+|     "productsID": "PROD007",
+|     "productName": "ProGrip Yoga Mat 6mm",
+|     "category": "Fitness",
+|     "brand": "FlexiBody",
+|     "price": 25.50,
+|     "stock": 85,
+|     "rating": 4.4,
+|     "instock": true,
+|     "tags": ["yoga", "mat", "fitness", "exercise"],
+|     "seller": "FitWear Store"
+|   },
+|   {
+|     "productsID": "PROD008",
+|     "productName": "UltraClean Robotic Vacuum",
+|     "category": "Home Appliances",
+|     "brand": "RoboVac",
+|     "price": 249.00,
+|     "stock": 0,
+|     "rating": 4.1,
+|     "instock": false,
+|     "tags": ["vacuum", "smart-home", "appliances", "cleaning"],
+|     "seller": "CloudTail Net"
+|   },
+|   {
+|     "productsID": "PROD009",
+|     "productName": "Classic Leather Wallet",
+|     "category": "Accessories",
+|     "brand": "UrbanHide",
+|     "price": 45.00,
+|     "stock": 60,
+|     "rating": 4.6,
+|     "instock": true,
+|     "tags": ["wallet", "leather", "men-fashion", "accessories"],
+|     "seller": "UrbanStyle Co"
+|   },
+|   {
+|     "productsID": "PROD010",
+|     "productName": "4K UltraHD Smart LED TV 55\"",
+|     "category": "Electronics",
+|     "brand": "VividVision",
+|     "price": 449.99,
+|     "stock": 22,
+|     "rating": 4.7,
+|     "instock": true,
+|     "tags": ["tv", "smart-tv", "4k", "electronics"],
+|     "seller": "AlphaRetail India"
+|   }
+| ])
+| 
+Uncaught:
+SyntaxError: Missing semicolon. (2:3)
+
+
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.insertMany([
+|   {
+|     "productsID": "PROD001",
+|     "productName": "AlphaSonic Wireless Headphones",
+|     "category": "Electronics",
+|     "brand": "AlphaSonic",
+|     "price": 129.99,
+|     "stock": 45,
+|     "rating": 4.7,
+|     "instock": true,
+|     "tags": ["audio", "wireless", "headphones", "gadgets"],
+|     "seller": "AlphaRetail India"
+|   },
+|   {
+|     "productsID": "PROD002",
+|     "productName": "Stratus Men's Running Shoes",
+|     "category": "Footwear",
+|     "brand": "Stratus",
+|     "price": 79.50,
+|     "stock": 120,
+|     "rating": 4.3,
+|     "instock": true,
+|     "tags": ["shoes", "sports", "running", "men-fashion"],
+|     "seller": "FitWear Store"
+|   },
+|   {
+|     "productsID": "PROD003",
+|     "productName": "HydroFlask 1L Water Bottle",
+|     "category": "Kitchen & Dining",
+|     "brand": "HydroFlask",
+|     "price": 34.00,
+|     "stock": 0,
+|     "rating": 4.8,
+|     "instock": false,
+|     "tags": ["bottle", "eco-friendly", "kitchen", "fitness"],
+|     "seller": "CloudTail Net"
+|   },
+|   {
+|     "productsID": "PROD004",
+|     "productName": "SwiftTab Pro 10-inch Tablet",
+|     "category": "Electronics",
+|     "brand": "SwiftTab",
+|     "price": 299.00,
+|     "stock": 15,
+|     "rating": 4.2,
+|     "instock": true,
+|     "tags": ["tablet", "android", "electronics", "work-from-home"],
+|     "seller": "AlphaRetail India"
+|   },
+|   {
+|     "productsID": "PROD005",
+|     "productName": "Organic Green Tea Mint Pack",
+|     "category": "Grocery",
+|     "brand": "PureLeaf",
+|     "price": 12.99,
+|     "stock": 250,
+|     "rating": 4.6,
+|     "instock": true,
+|     "tags": ["tea", "organic", "grocery", "healthy"],
+|     "seller": "OrganicMart"
+|   },
+|   {
+|     "productsID": "PROD006",
+|     "productName": "Ergonomic Office Chair",
+|     "category": "Furniture",
+|     "brand": "ComfortPlus",
+|     "price": 189.99,
+|     "stock": 8,
+|     "rating": 4.5,
+|     "instock": true,
+|     "tags": ["chair", "furniture", "office", "ergonomic"],
+|     "seller": "Zenith Furniture"
+|   },
+|   {
+|     "productsID": "PROD007",
+|     "productName": "ProGrip Yoga Mat 6mm",
+|     "category": "Fitness",
+|     "brand": "FlexiBody",
+|     "price": 25.50,
+|     "stock": 85,
+|     "rating": 4.4,
+|     "instock": true,
+|     "tags": ["yoga", "mat", "fitness", "exercise"],
+|     "seller": "FitWear Store"
+|   },
+|   {
+|     "productsID": "PROD008",
+|     "productName": "UltraClean Robotic Vacuum",
+|     "category": "Home Appliances",
+|     "brand": "RoboVac",
+|     "price": 249.00,
+|     "stock": 0,
+|     "rating": 4.1,
+|     "instock": false,
+|     "tags": ["vacuum", "smart-home", "appliances", "cleaning"],
+|     "seller": "CloudTail Net"
+|   },
+|   {
+|     "productsID": "PROD009",
+|     "productName": "Classic Leather Wallet",
+|     "category": "Accessories",
+|     "brand": "UrbanHide",
+|     "price": 45.00,
+|     "stock": 60,
+|     "rating": 4.6,
+|     "instock": true,
+|     "tags": ["wallet", "leather", "men-fashion", "accessories"],
+|     "seller": "UrbanStyle Co"
+|   },
+|   {
+|     "productsID": "PROD010",
+|     "productName": "4K UltraHD Smart LED TV 55\"",
+|     "category": "Electronics",
+|     "brand": "VividVision",
+|     "price": 449.99,
+|     "stock": 22,
+|     "rating": 4.7,
+|     "instock": true,
+|     "tags": ["tv", "smart-tv", "4k", "electronics"],
+|     "seller": "AlphaRetail India"
+|   }
+| ])
+| 
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6aa0e153ac457069b6219ce1'),
+    '1': ObjectId('6aa0e153ac457069b6219ce2'),
+    '2': ObjectId('6aa0e153ac457069b6219ce3'),
+    '3': ObjectId('6aa0e153ac457069b6219ce4'),
+    '4': ObjectId('6aa0e153ac457069b6219ce5'),
+    '5': ObjectId('6aa0e153ac457069b6219ce6'),
+    '6': ObjectId('6aa0e153ac457069b6219ce7'),
+    '7': ObjectId('6aa0e153ac457069b6219ce8'),
+    '8': ObjectId('6aa0e153ac457069b6219ce9'),
+    '9': ObjectId('6aa0e153ac457069b6219cea')
+  }
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.find({ category: "Electronics" })
+| 
+[
+  {
+    _id: ObjectId('6aa0e153ac457069b6219ce1'),
+    productsID: 'PROD001',
+    productName: 'AlphaSonic Wireless Headphones',
+    category: 'Electronics',
+    brand: 'AlphaSonic',
+    price: 129.99,
+    stock: 45,
+    rating: 4.7,
+    instock: true,
+    tags: [ 'audio', 'wireless', 'headphones', 'gadgets' ],
+    seller: 'AlphaRetail India'
+  },
+  {
+    _id: ObjectId('6aa0e153ac457069b6219ce4'),
+    productsID: 'PROD004',
+    productName: 'SwiftTab Pro 10-inch Tablet',
+    category: 'Electronics',
+    brand: 'SwiftTab',
+    price: 299,
+    stock: 15,
+    rating: 4.2,
+    instock: true,
+    tags: [ 'tablet', 'android', 'electronics', 'work-from-home' ],
+    seller: 'AlphaRetail India'
+  },
+  {
+    _id: ObjectId('6aa0e153ac457069b6219cea'),
+    productsID: 'PROD010',
+    productName: '4K UltraHD Smart LED TV 55"',
+    category: 'Electronics',
+    brand: 'VividVision',
+    price: 449.99,
+    stock: 22,
+    rating: 4.7,
+    instock: true,
+    tags: [ 'tv', 'smart-tv', '4k', 'electronics' ],
+    seller: 'AlphaRetail India'
+  }
+]
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.users.find({ "address.city": "Jaipur" })
+| 
+
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $set: { price: 135.00, warranty: "1 year" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD002" },
+|   { $inc: { stock: 5, price: -2.50 } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $unset: { seller: "" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $push: { tags: "bass" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $push: { tags: "bass" } }
+| )
+| 
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $set: { rating: 4.9 } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+| 
+
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $set: { price: 135.00, warranty: "1 year" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD002" },
+|   { $inc: { stock: 5, price: -2.50 } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $unset: { seller: "" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $push: { tags: "bass" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $push: { tags: "bass" } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD001" },
+|   { $set: { rating: 4.9 } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD002" },
+|   { $set: { rating: 4.6 } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> db.products.updateOne(
+|   { productsID: "PROD002" },
+|   { $inc: { rating: 0.3 } }
+| )
+| 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDB> 
+ *  History restored 
+
+PS C:\Users\das96\Downloads\mongosh-2.10.0-win32-x64> mongosh "mongodb+srv://cluster0.efdnw2t.mongodb.net/" --apiVersion 1 --username das960040_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6aa0ff70d602c85462bca7ea
+Connecting to:          mongodb+srv://<credentials>@cluster0.efdnw2t.mongodb.net/?appName=mongosh+2.10.0
+Using MongoDB:          8.0.32 (API Version 1)
+Using Mongosh:          2.10.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-dwq3vv-shard-0 [primary] test> use students
+switched to db students
+Atlas atlas-dwq3vv-shard-0 [primary] students> use ecomDb
+switched to db ecomDb
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> show dbs
+ecomDB         80.00 KiB
+sample_mflix  229.03 MiB
+student       288.00 KiB
+admin                0 B
+local                0 B
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> const categories = [
+|     "Electronics",
+|     "Mobiles",
+|     "Laptops",
+|     "Home Appliances",
+|     "Fashion",
+|     "Books",
+|     "Sports",
+|     "Beauty",
+|     "Grocery",
+|     "Furniture"
+| ];
+| 
+| const subCategories = {
+|     "Electronics": ["Headphones", "Smartwatch", "Camera", "Speaker"],
+|     "Mobiles": ["Android", "iPhone", "Feature Phone"],
+|     "Laptops": ["Gaming", "Business", "Student"],
+|     "Home Appliances": ["Refrigerator", "Washing Machine", "Microwave"],
+|     "Fashion": ["Men", "Women", "Kids"],
+|     "Books": ["Programming", "Fiction", "Education"],
+|     "Sports": ["Cricket", "Football", "Fitness"],
+|     "Beauty": ["Skincare", "Haircare", "Makeup"],
+|     "Grocery": ["Snacks", "Beverages", "Staples"],
+|     "Furniture": ["Chair", "Table", "Sofa"]
+| };
+| 
+| const brands = [
+|     "Samsung",
+|     "Apple",
+|     "Sony",
+|     "LG",
+|     "HP",
+|     "Dell",
+|     "Lenovo",
+|     "Nike",
+|     "Adidas",
+|     "Boat",
+|     "OnePlus",
+|     "AmazonBasics"
+| ];
+| 
+| const cities = [
+|     "Chennai",
+|     "Coimbatore",
+|     "Bangalore",
+|     "Hyderabad",
+|     "Mumbai",
+|     "Delhi",
+|     "Pune",
+|     "Kochi",
+|     "Kolkata",
+|     "Ahmedabad"
+| ];
+| 
+| const states = [
+|     "Tamil Nadu",
+|     "Karnataka",
+|     "Telangana",
+|     "Maharashtra",
+|     "Delhi",
+|     "Kerala",
+|     "West Bengal",
+|     "Gujarat"
+| ];
+| 
+| const paymentMethods = [
+|     "UPI",
+|     "Credit Card",
+|     "Debit Card",
+|     "Net Banking",
+|     "Cash on Delivery"
+| ];
+| 
+| const orderStatuses = [
+|     "Delivered",
+|     "Shipped",
+|     "Processing",
+|     "Cancelled",
+|     "Returned"
+| ];
+| 
+| const sellers = [
+|     "RetailHub",
+|     "TechWorld",
+|     "MegaStore",
+|     "DigitalMart",
+|     "SmartShop",
+|     "PrimeRetail"
+| ];
+| 
+| const tags = [
+|     "new",
+|     "popular",
+|     "trending",
+|     "premium",
+|     "budget",
+|     "best-seller",
+|     "discount",
+|     "limited-stock"
+| ];
+| 
+| 
+| // Store documents temporarily
+| let documents = [];
+| 
+| 
+| // Generate 5000 documents
+| for (let i = 1; i <= 5000; i++) {
+| 
+|     const category =
+|         categories[Math.floor(Math.random() * categories.length)];
+| 
+|     const subCategory =
+|         subCategories[category][
+|             Math.floor(Math.random() * subCategories[category].length)
+|         ];
+| 
+|     const brand =
+|         brands[Math.floor(Math.random() * brands.length)];
+| 
+|     const city =
+|         cities[Math.floor(Math.random() * cities.length)];
+| 
+|     const state =
+|         states[Math.floor(Math.random() * states.length)];
+| 
+|     const paymentMethod =
+|         paymentMethods[
+|             Math.floor(Math.random() * paymentMethods.length)
+|         ];
+| 
+|     const orderStatus =
+|         orderStatuses[
+|             Math.floor(Math.random() * orderStatuses.length)
+|         ];
+| 
+|     const seller =
+|         sellers[
+|             Math.floor(Math.random() * sellers.length)
+|         ];
+| 
+| 
+|     const quantity =
+|         Math.floor(Math.random() * 5) + 1;
+| 
+|     const price =
+|         Math.floor(Math.random() * 95000) + 500;
+| 
+|     const discount =
+|         Math.floor(Math.random() * 51);
+| 
+|     const discountedPrice =
+|         Math.round(
+|             price - (price * discount / 100)
+|         );
+| 
+|     const rating =
+|         Number(
+|             (Math.random() * 4 + 1).toFixed(1)
+|         );
+| 
+|     const stock =
+|         Math.floor(Math.random() * 500);
+| 
+| 
+|     // Generate 2 random tags
+|     const selectedTags = [];
+| 
+|     for (let j = 0; j < 2; j++) {
+| 
+|         selectedTags.push(
+|             tags[Math.floor(Math.random() * tags.length)]
+|         );
+|     }
+| 
+| 
+|     // Random date between 2024 and 2026
+|     const startDate =
+|         new Date("2024-01-01").getTime();
+| 
+|     const endDate =
+|         new Date("2026-08-25").getTime();
+| 
+|     const randomDate =
+|         new Date(
+|             startDate +
+|             Math.random() * (endDate - startDate)
+|         );
+| 
+| 
+|     // Create document
+|     const product = {
+| 
+|         productId:
+|             "PROD" + String(i).padStart(5, "0"),
+| 
+|         productName:
+|             brand + " " + subCategory + " " + i,
+| 
+|         category: category,
+| 
+|         subCategory: subCategory,
+| 
+|         brand: brand,
+| 
+|         price: price,
+| 
+|         discountPercentage: discount,
+| 
+|         discountedPrice: discountedPrice,
+| 
+|         quantity: quantity,
+| 
+|         revenue:
+|             discountedPrice * quantity,
+| 
+|         rating: rating,
+| 
+|         reviewCount:
+|             Math.floor(Math.random() * 5000),
+| 
+|         stock: stock,
+| 
+|         inStock:
+|             stock > 0,
+| 
+| 
+|         seller: {
+| 
+|             name: seller,
+| 
+|             sellerRating:
+|                 Number(
+|                     (Math.random() * 4 + 1).toFixed(1)
+|                 )
+|         },
+| 
+| 
+|         customer: {
+| 
+|             customerId:
+|                 "CUS" +
+|                 String(
+|                     Math.floor(Math.random() * 1000) + 1
+|                 ).padStart(4, "0"),
+| 
+|             city: city,
+| 
+|             state: state,
+| 
+|             age:
+|                 Math.floor(Math.random() * 50) + 18
+|         },
+| 
+| 
+|         payment: {
+| 
+|             method: paymentMethod,
+| 
+|             transactionId:
+|                 "TXN" +
+|                 Math.random()
+|                     .toString(36)
+|                     .substring(2, 12)
+|         },
+| 
+| 
+|         orderStatus: orderStatus,
+| 
+|         orderDate: randomDate,
+| 
+|         tags: selectedTags,
+| 
+| 
+|         specifications: {
+| 
+|             warranty:
+|                 (Math.floor(Math.random() * 3) + 1) +
+|                 " years",
+| 
+|             color: [
+|                 "Black",
+|                 "White",
+|                 "Blue",
+|                 "Red",
+|                 "Silver"
+|             ][Math.floor(Math.random() * 5)],
+| 
+|             weight:
+|                 Number(
+|                     (Math.random() * 5 + 0.5).toFixed(2)
+|                 )
+|         },
+| 
+| 
+|         isFeatured:
+|             Math.random() > 0.7,
+| 
+|         createdAt: new Date()
+|     };
+| 
+| 
+|     documents.push(product);
+| 
+| 
+|     // Insert every 500 documents
+|     if (documents.length === 500) {
+| 
+|         db.aggex.insertMany(documents);
+| 
+|         documents = [];
+|     }
+| }
+| 
+| // Insert remaining documents
+| if (documents.length > 0) {
+| 
+|     db.aggex.insertMany(documents);
+| }
+| print("5000 documents inserted successfully into aggex!");
+Uncaught:
+MongoBulkWriteError: db already exists with different case already have: [ecomDB] trying to create [ecomDb]
+Result: BulkWriteResult {
+  insertedCount: 0,
+  matchedCount: 0,
+  modifiedCount: 0,
+  deletedCount: 0,
+  upsertedCount: 0,
+  upsertedIds: {},
+  insertedIds: {}
+}
+Write Errors: [
+  WriteError {
+    err: {
+      index: 0,
+      code: 13297,
+      errmsg: 'db already exists with different case already have: [ecomDB] trying to create [ecomDb]',
+      errInfo: undefined,
+      op: {
+        productId: 'PROD00001',
+        productName: 'Nike Men 1',
+        category: 'Fashion',
+        subCategory: 'Men',
+        brand: 'Nike',
+        price: 66617,
+        discountPercentage: 20,
+        discountedPrice: 53294,
+        quantity: 2,
+        revenue: 106588,
+        rating: 2.6,
+        reviewCount: 1078,
+        stock: 267,
+        inStock: true,
+        seller: { name: 'TechWorld', sellerRating: 4.9 },
+        customer: {
+          customerId: 'CUS0068',
+          city: 'Kolkata',
+          state: 'Karnataka',
+          age: 56
+        },
+        payment: { method: 'Credit Card', transactionId: 'TXNval7rvqsd8' },
+        orderStatus: 'Cancelled',
+        orderDate: ISODate('2024-11-22T22:32:59.973Z'),
+        tags: [ 'limited-stock', 'limited-stock' ],
+        specifications: { warranty: '1 years', color: 'Blue', weight: 5.33 },
+        isFeatured: true,
+        createdAt: ISODate('2026-09-09T06:45:51.819Z'),
+        _id: ObjectId('6aa1009fd602c85462bca7eb')
+      }
+    }
+  }
+]
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $set: {
+|             price: 50000
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $set: {
+|             "specifications.warranty": "5 years"
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $set: {
+|             isPremium: true
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $push: {
+|             tags: "featured"
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $push: {
+|             tags: {
+|                 $each: ["sale", "recommended"]
+|             }
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $inc: {
+|             stock: 10
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $inc: {
+|             rating: 0.2
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $inc: {
+|             stock: -5
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $inc: {
+|             reviewCount: 100
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $unset: {
+|             isPremium: ""
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $unset: {
+|             "specifications.weight": ""
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.updateOne(
+|     { productId: "PROD00001" },
+|     {
+|         $unset: {
+|             "seller.sellerRating": ""
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$category",
+|             totalProducts: { $sum: 1 }
+|         }
+|     }
+| ])
+
+Atlas atlas-dwq3vv-shard-0 [primary] ecomDb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$brand",
+|             averagePrice: { $avg: "$price" }
+|         }
+|     }
+| ])
