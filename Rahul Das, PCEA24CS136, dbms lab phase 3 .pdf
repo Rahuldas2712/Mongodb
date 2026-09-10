@@ -1,0 +1,1565 @@
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1002, name: 'Seller 2', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.3602742352963, 11.034170006331188 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-02T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e719259c'),
+    productId: 3,
+    name: 'HP Product 3',
+    category: 'Clothing',
+    brand: 'HP',
+    price: 23769,
+    quantity: 7,
+    rating: 4.4,
+    description: 'This is a high quality Clothing product from HP with excellent features and performance.',
+    tags: [ 'premium', 'trending' ],
+    seller: { sellerId: 1003, name: 'Seller 3', city: 'Coimbatore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.09546991541185, 11.385998209503965 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-04-03T18:30:00.000Z'),
+    email: 'customer3@example.com'
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e719259d'),
+    productId: 4,
+    name: 'Lenovo Product 4',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 16798,
+    quantity: 7,
+    rating: 2.1,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1004, name: 'Seller 4', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.24267826376787, 11.157995433397948 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-04T18:30:00.000Z'),
+    discount: 36
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e719259e'),
+    productId: 5,
+    name: 'Sony Product 5',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 62592,
+    quantity: 1,
+    rating: 1.5,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1005, name: 'Seller 5', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.12461426934055, 11.423696077771211 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-06-05T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e719259f'),
+    productId: 6,
+    name: 'Nike Product 6',
+    category: 'Shoes',
+    brand: 'Nike',
+    price: 90865,
+    quantity: 6,
+    rating: 4.8,
+    description: 'This is a high quality Shoes product from Nike with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1006, name: 'Seller 6', city: 'Tiruchengode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.40255974074925, 11.435837196374765 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-06T18:30:00.000Z'),
+    email: 'customer6@example.com'
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a0'),
+    productId: 7,
+    name: 'Adidas Product 7',
+    category: 'Accessories',
+    brand: 'Adidas',
+    price: 6164,
+    quantity: 6,
+    rating: 1.4,
+    description: 'This is a high quality Accessories product from Adidas with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1007, name: 'Seller 7', city: 'Madurai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.02834718536317, 11.104318323320447 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-07T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a1'),
+    productId: 8,
+    name: 'Puma Product 8',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 44494,
+    quantity: 8,
+    rating: 4.3,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1008, name: 'Seller 8', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.11768367275069, 11.188180798570146 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-09-08T18:30:00.000Z'),
+    discount: 20
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a2'),
+    productId: 9,
+    name: 'OnePlus Product 9',
+    category: 'Sports',
+    brand: 'OnePlus',
+    price: 66484,
+    quantity: 3,
+    rating: 1.1,
+    description: 'This is a high quality Sports product from OnePlus with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1009, name: 'Seller 9', city: 'Pondicherry' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.44135909666878, 11.454327290499172 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-09T18:30:00.000Z'),
+    email: 'customer9@example.com'
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a3'),
+    productId: 10,
+    name: 'Apple Product 10',
+    category: 'Electronics',
+    brand: 'Apple',
+    price: 88996,
+    quantity: 5,
+    rating: 2.9,
+    description: 'This is a high quality Electronics product from Apple with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1010, name: 'Seller 10', city: 'Chennai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.30014460255491, 11.263519900945061 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-11-10T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a4'),
+    productId: 11,
+    name: 'Samsung Product 11',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20694,
+    quantity: 8,
+    rating: 3.1,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'premium', 'trending' ],
+    seller: { sellerId: 1011, name: 'Seller 11', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.27313084205774, 11.322116942675839 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-12-11T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a5'),
+    productId: 12,
+    name: 'Dell Product 12',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 25247,
+    quantity: 7,
+    rating: 1.6,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1012, name: 'Seller 12', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.18835741933142, 11.055518166473592 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-01-12T18:30:00.000Z'),
+    email: 'customer12@example.com',
+    discount: 22
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a6'),
+    productId: 13,
+    name: 'HP Product 13',
+    category: 'Clothing',
+    brand: 'HP',
+    price: 77955,
+    quantity: 10,
+    rating: 2.2,
+    description: 'This is a high quality Clothing product from HP with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1013, name: 'Seller 13', city: 'Coimbatore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.07091198666846, 11.08037736249615 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-02-13T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a7'),
+    productId: 14,
+    name: 'Lenovo Product 14',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 75874,
+    quantity: 10,
+    rating: 2.9,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1014, name: 'Seller 14', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.4427825011953, 11.408691784903956 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-14T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a8'),
+    productId: 15,
+    name: 'Sony Product 15',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 74024,
+    quantity: 3,
+    rating: 4.2,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1015, name: 'Seller 15', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.99282078762347, 11.330615785754683 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-04-15T18:30:00.000Z'),
+    email: 'customer15@example.com'
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925a9'),
+    productId: 16,
+    name: 'Nike Product 16',
+    category: 'Shoes',
+    brand: 'Nike',
+    price: 10052,
+    quantity: 10,
+    rating: 2,
+    description: 'This is a high quality Shoes product from Nike with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1016, name: 'Seller 16', city: 'Tiruchengode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.25020727649857, 11.05671124064008 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-16T18:30:00.000Z'),
+    discount: 31
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925aa'),
+    productId: 17,
+    name: 'Adidas Product 17',
+    category: 'Accessories',
+    brand: 'Adidas',
+    price: 29719,
+    quantity: 6,
+    rating: 2.3,
+    description: 'This is a high quality Accessories product from Adidas with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1017, name: 'Seller 17', city: 'Madurai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.14468055343649, 11.068650965587999 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-06-17T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925ab'),
+    productId: 18,
+    name: 'Puma Product 18',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 61002,
+    quantity: 10,
+    rating: 1.7,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1018, name: 'Seller 18', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.44942995421975, 11.18497249824937 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-18T18:30:00.000Z'),
+    email: 'customer18@example.com'
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925ac'),
+    productId: 19,
+    name: 'OnePlus Product 19',
+    category: 'Sports',
+    brand: 'OnePlus',
+    price: 43125,
+    quantity: 2,
+    rating: 3.8,
+    description: 'This is a high quality Sports product from OnePlus with excellent features and performance.',
+    tags: [ 'premium', 'trending' ],
+    seller: { sellerId: 1019, name: 'Seller 19', city: 'Pondicherry' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.95998368981813, 11.219075904259112 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-19T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925ad'),
+    productId: 20,
+    name: 'Apple Product 20',
+    category: 'Electronics',
+    brand: 'Apple',
+    price: 37743,
+    quantity: 9,
+    rating: 1.9,
+    description: 'This is a high quality Electronics product from Apple with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1020, name: 'Seller 20', city: 'Chennai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.35629161553152, 11.245571886283509 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-09-20T18:30:00.000Z'),
+    discount: 39
+  }
+]
+Type "it" for more
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.find( { price : {$gt : 20000} } )
+[
+  {
+    _id: ObjectId('6aa23055100d16c9e71929c2'),
+    productId: 1065,
+    name: 'Sony Product 1065',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 20023,
+    quantity: 8,
+    rating: 4.2,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1065, name: 'Seller 65', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.26716405283133, 11.14057941278766 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-10-01T18:30:00.000Z'),
+    email: 'customer1065@example.com'
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e71925f1'),
+    productId: 88,
+    name: 'Puma Product 88',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 20028,
+    quantity: 2,
+    rating: 4.6,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1088, name: 'Seller 88', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.25472906414646, 11.212942843642137 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-04T18:30:00.000Z'),
+    discount: 42
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e71934e8'),
+    productId: 3919,
+    name: 'OnePlus Product 3919',
+    category: 'Sports',
+    brand: 'OnePlus',
+    price: 20031,
+    quantity: 4,
+    rating: 2.6,
+    description: 'This is a high quality Sports product from OnePlus with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1019, name: 'Seller 19', city: 'Pondicherry' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.95633735606917, 11.001366876274746 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-27T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230b1100d16c9e719332a'),
+    productId: 3473,
+    name: 'HP Product 3473',
+    category: 'Clothing',
+    brand: 'HP',
+    price: 20036,
+    quantity: 3,
+    rating: 4,
+    description: 'This is a high quality Clothing product from HP with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1073, name: 'Seller 73', city: 'Coimbatore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.12463562782757, 11.315046562428396 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-06-01T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e7193547'),
+    productId: 4014,
+    name: 'Lenovo Product 4014',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 20047,
+    quantity: 8,
+    rating: 3.3,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1014, name: 'Seller 14', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.19816895292902, 11.472641414809559 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-10T18:30:00.000Z'),
+    email: 'customer4014@example.com'
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e7193695'),
+    productId: 4348,
+    name: 'Puma Product 4348',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 20077,
+    quantity: 1,
+    rating: 1.9,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1048, name: 'Seller 48', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.95179941420821, 11.204162974011085 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-08T18:30:00.000Z'),
+    discount: 17
+  },
+  {
+    _id: ObjectId('6aa23045100d16c9e7192935'),
+    productId: 924,
+    name: 'Lenovo Product 924',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 20080,
+    quantity: 1,
+    rating: 2.5,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1024, name: 'Seller 24', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.2368698153128, 11.219660803633573 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2023-12-31T18:30:00.000Z'),
+    email: 'customer924@example.com',
+    discount: 31
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e71935c3'),
+    productId: 4138,
+    name: 'Puma Product 4138',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 20106,
+    quantity: 9,
+    rating: 3,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1038, name: 'Seller 38', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.00241009726761, 11.396571795642476 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-22T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23067100d16c9e7192c10'),
+    productId: 1655,
+    name: 'Sony Product 1655',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 20116,
+    quantity: 10,
+    rating: 2.4,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1055, name: 'Seller 55', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.15042037066236, 11.047550330385782 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-12-03T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230d7100d16c9e71938cf'),
+    productId: 4918,
+    name: 'Puma Product 4918',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 20126,
+    quantity: 10,
+    rating: 1.2,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1018, name: 'Seller 18', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.41007997115814, 11.249516344472365 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-18T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23055100d16c9e7192a6a'),
+    productId: 1233,
+    name: 'HP Product 1233',
+    category: 'Clothing',
+    brand: 'HP',
+    price: 20135,
+    quantity: 6,
+    rating: 3.3,
+    description: 'This is a high quality Clothing product from HP with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1033, name: 'Seller 33', city: 'Coimbatore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.95222641912011, 11.394891819086943 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-01T18:30:00.000Z'),
+    email: 'customer1233@example.com'
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e71933a0'),
+    productId: 3591,
+    name: 'Samsung Product 3591',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20168,
+    quantity: 6,
+    rating: 1.7,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1091, name: 'Seller 91', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.03597567833883, 11.41660802622727 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-04-07T18:30:00.000Z'),
+    email: 'customer3591@example.com'
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e719366a'),
+    productId: 4305,
+    name: 'Sony Product 4305',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 20177,
+    quantity: 8,
+    rating: 4.2,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1005, name: 'Seller 5', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.1443545003618, 11.254101643416575 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-10-21T18:30:00.000Z'),
+    email: 'customer4305@example.com'
+  },
+  {
+    _id: ObjectId('6aa23067100d16c9e7192c5b'),
+    productId: 1730,
+    name: 'Apple Product 1730',
+    category: 'Electronics',
+    brand: 'Apple',
+    price: 20209,
+    quantity: 1,
+    rating: 4.8,
+    description: 'This is a high quality Electronics product from Apple with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1030, name: 'Seller 30', city: 'Chennai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.25586829041991, 11.095850906317468 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-03-22T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23067100d16c9e7192d67'),
+    productId: 1998,
+    name: 'Puma Product 1998',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 20235,
+    quantity: 3,
+    rating: 2.8,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1098, name: 'Seller 98', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.1331820068703, 11.262964764694363 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-10T18:30:00.000Z'),
+    email: 'customer1998@example.com'
+  },
+  {
+    _id: ObjectId('6aa23045100d16c9e719283e'),
+    productId: 677,
+    name: 'Adidas Product 677',
+    category: 'Accessories',
+    brand: 'Adidas',
+    price: 20266,
+    quantity: 3,
+    rating: 4.6,
+    description: 'This is a high quality Accessories product from Adidas with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1077, name: 'Seller 77', city: 'Madurai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.01550613113434, 11.493762624471337 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-06-05T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e7193346'),
+    productId: 3501,
+    name: 'Samsung Product 3501',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20278,
+    quantity: 8,
+    rating: 4.1,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1001, name: 'Seller 1', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.24971072647155, 11.103332900858238 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-01T18:30:00.000Z'),
+    email: 'customer3501@example.com'
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e71934b3'),
+    productId: 3866,
+    name: 'Nike Product 3866',
+    category: 'Shoes',
+    brand: 'Nike',
+    price: 20294,
+    quantity: 7,
+    rating: 1.9,
+    description: 'This is a high quality Shoes product from Nike with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1066, name: 'Seller 66', city: 'Tiruchengode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.20445676537412, 11.465325434837306 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-02T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa22ff7100d16c9e7192670'),
+    productId: 215,
+    name: 'Sony Product 215',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 20306,
+    quantity: 3,
+    rating: 4.8,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1015, name: 'Seller 15', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.05019713586816, 11.116343318881118 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-12-19T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23055100d16c9e7192a2c'),
+    productId: 1171,
+    name: 'Samsung Product 1171',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20313,
+    quantity: 10,
+    rating: 3.6,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'premium', 'trending' ],
+    seller: { sellerId: 1071, name: 'Seller 71', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.28522928063212, 11.333606520317467 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-23T18:30:00.000Z')
+  }
+]
+Type "it" for more
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.find( { price : {$gt : 20000} } ).explain("executionStats")
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'indexes.products',
+    parsedQuery: { price: { '$gt': 20000 } },
+    indexFilterSet: false,
+    queryHash: '8E1D451A',
+    planCacheShapeHash: '8E1D451A',
+    planCacheKey: 'F4407A58',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 3940,
+    executionTimeMillis: 5,
+    totalKeysExamined: 3940,
+    totalDocsExamined: 3940,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 3940,
+      executionTimeMillisEstimate: 5,
+      works: 3941,
+      advanced: 3940,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 3940,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 3940,
+        executionTimeMillisEstimate: 3,
+        works: 3941,
+        advanced: 3940,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] },
+        keysExamined: 3940,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'D4EC468988E2A6EC1DBA322F0BEF067D525844A6871BFDE72501140472FF7459',
+  command: {
+    find: 'products',
+    filter: { price: { '$gt': 20000 } },
+    '$db': 'indexes'
+  },
+  serverInfo: {
+    host: 'ac-uialt1l-shard-00-02.efdnw2t.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015410, i: 24 }),
+    signature: {
+      hash: Binary.createFromBase64('/z33dLeXfJIsCFqASGHy0iTUi3w=', 0),
+      keyId: Long('7652463365813436428')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015410, i: 24 })
+}
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.createIndex({price : 1})
+price_1
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.getIndexes()
+[
+  { v: 2, key: { _id: 1 }, name: '_id_' },
+  { v: 2, key: { price: 1 }, name: 'price_1' }
+]
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.find( { price : {$gt : 20000} } ).explain("executionStats")
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'indexes.products',
+    parsedQuery: { price: { '$gt': 20000 } },
+    indexFilterSet: false,
+    queryHash: '8E1D451A',
+    planCacheShapeHash: '8E1D451A',
+    planCacheKey: 'F4407A58',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 3940,
+    executionTimeMillis: 5,
+    totalKeysExamined: 3940,
+    totalDocsExamined: 3940,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 3940,
+      executionTimeMillisEstimate: 5,
+      works: 3941,
+      advanced: 3940,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 3940,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 3940,
+        executionTimeMillisEstimate: 1,
+        works: 3941,
+        advanced: 3940,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] },
+        keysExamined: 3940,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'D4EC468988E2A6EC1DBA322F0BEF067D525844A6871BFDE72501140472FF7459',
+  command: {
+    find: 'products',
+    filter: { price: { '$gt': 20000 } },
+    '$db': 'indexes'
+  },
+  serverInfo: {
+    host: 'ac-uialt1l-shard-00-02.efdnw2t.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015449, i: 19 }),
+    signature: {
+      hash: Binary.createFromBase64('2+RQBVwLi/072TTIRGnpwvXd1ZM=', 0),
+      keyId: Long('7652463365813436428')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015449, i: 19 })
+}
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> Atlas atlas-dwq3vv-shard-0 [secondary] indexes> db.products.find( { category : "Laptops" , price : {$gt : 35000} } )
+[
+  {
+    _id: ObjectId('6aa23075100d16c9e7192ded'),
+    productId: 2132,
+    name: 'Dell Product 2132',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35094,
+    quantity: 9,
+    rating: 4,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1032, name: 'Seller 32', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.29739390536218, 11.18735582662066 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-09-04T18:30:00.000Z'),
+    discount: 23
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e71934a5'),
+    productId: 3852,
+    name: 'Dell Product 3852',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35138,
+    quantity: 8,
+    rating: 3,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1052, name: 'Seller 52', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.97619575076416, 11.116136449186316 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-01-16T18:30:00.000Z'),
+    email: 'customer3852@example.com',
+    discount: 39
+  },
+  {
+    _id: ObjectId('6aa230a8100d16c9e7193149'),
+    productId: 2992,
+    name: 'Dell Product 2992',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35468,
+    quantity: 10,
+    rating: 3.1,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1092, name: 'Seller 92', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.30943172999835, 11.099431515358821 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-24T18:30:00.000Z'),
+    discount: 6
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e71934eb'),
+    productId: 3922,
+    name: 'Dell Product 3922',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35602,
+    quantity: 1,
+    rating: 1.9,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1022, name: 'Seller 22', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.21218066486185, 11.499734300895685 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-02T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e71935a9'),
+    productId: 4112,
+    name: 'Dell Product 4112',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35704,
+    quantity: 1,
+    rating: 3.7,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1012, name: 'Seller 12', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.26177098711022, 11.220944896439953 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-09-24T18:30:00.000Z'),
+    discount: 40
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e719342d'),
+    productId: 3732,
+    name: 'Dell Product 3732',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35752,
+    quantity: 1,
+    rating: 1.9,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1032, name: 'Seller 32', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.13056049617816, 11.096539397061104 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-01-08T18:30:00.000Z'),
+    email: 'customer3732@example.com',
+    discount: 44
+  },
+  {
+    _id: ObjectId('6aa23067100d16c9e7192d11'),
+    productId: 1912,
+    name: 'Dell Product 1912',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35832,
+    quantity: 9,
+    rating: 3.6,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1012, name: 'Seller 12', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.42179387347528, 11.374197536620564 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-08T18:30:00.000Z'),
+    discount: 25
+  },
+  {
+    _id: ObjectId('6aa230a8100d16c9e7192f9b'),
+    productId: 2562,
+    name: 'Dell Product 2562',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 35906,
+    quantity: 1,
+    rating: 1,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1062, name: 'Seller 62', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.36072296179826, 11.105044240031182 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-14T18:30:00.000Z'),
+    email: 'customer2562@example.com'
+  },
+  {
+    _id: ObjectId('6aa23045100d16c9e71927f3'),
+    productId: 602,
+    name: 'Dell Product 602',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 36283,
+    quantity: 2,
+    rating: 1.1,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1002, name: 'Seller 2', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.25296275170348, 11.344642827422348 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-14T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230a8100d16c9e7192fcd'),
+    productId: 2612,
+    name: 'Dell Product 2612',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 36386,
+    quantity: 4,
+    rating: 2.5,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1012, name: 'Seller 12', city: 'Hyderabad' },
+    location: { type: 'Point', coordinates: [ 77.01738001684961, 11.0513045995023 ] },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-09-08T18:30:00.000Z'),
+    discount: 38
+  },
+  {
+    _id: ObjectId('6aa23045100d16c9e7192929'),
+    productId: 912,
+    name: 'Dell Product 912',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 36419,
+    quantity: 9,
+    rating: 4.4,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1012, name: 'Seller 12', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.36222076594599, 11.004281522294475 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-01-16T18:30:00.000Z'),
+    email: 'customer912@example.com',
+    discount: 35
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e719359f'),
+    productId: 4102,
+    name: 'Dell Product 4102',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37049,
+    quantity: 7,
+    rating: 4.3,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1002, name: 'Seller 2', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.04049107685368, 11.135231777930274 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-14T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23055100d16c9e7192983'),
+    productId: 1002,
+    name: 'Dell Product 1002',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37154,
+    quantity: 2,
+    rating: 4.2,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1002, name: 'Seller 2', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.1658635584085, 11.301855340442744 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-22T18:30:00.000Z'),
+    email: 'customer1002@example.com'
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e71935b3'),
+    productId: 4122,
+    name: 'Dell Product 4122',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37197,
+    quantity: 8,
+    rating: 2.1,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1022, name: 'Seller 22', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.21792651572649, 11.217482842946602 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-06T18:30:00.000Z'),
+    email: 'customer4122@example.com'
+  },
+  {
+    _id: ObjectId('6aa230d1100d16c9e71936fd'),
+    productId: 4452,
+    name: 'Dell Product 4452',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37215,
+    quantity: 3,
+    rating: 4.9,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1052, name: 'Seller 52', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.21473786251875, 11.354893016573909 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2023-12-31T18:30:00.000Z'),
+    email: 'customer4452@example.com',
+    discount: 6
+  },
+  {
+    _id: ObjectId('6aa230b1100d16c9e719326b'),
+    productId: 3282,
+    name: 'Dell Product 3282',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37417,
+    quantity: 1,
+    rating: 1.4,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1082, name: 'Seller 82', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.9721627975452, 11.213243514180103 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-06T18:30:00.000Z'),
+    email: 'customer3282@example.com'
+  },
+  {
+    _id: ObjectId('6aa23045100d16c9e719295b'),
+    productId: 962,
+    name: 'Dell Product 962',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37458,
+    quantity: 3,
+    rating: 1.3,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1062, name: 'Seller 62', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.24274324924123, 11.460324432433287 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-10T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230ca100d16c9e7193487'),
+    productId: 3822,
+    name: 'Dell Product 3822',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37589,
+    quantity: 5,
+    rating: 4.9,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1022, name: 'Seller 22', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.20239342739012, 11.20915538744864 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-14T18:30:00.000Z'),
+    email: 'customer3822@example.com'
+  },
+  {
+    _id: ObjectId('6aa230a8100d16c9e7193117'),
+    productId: 2942,
+    name: 'Dell Product 2942',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37627,
+    quantity: 1,
+    rating: 2.4,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1042, name: 'Seller 42', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.35317115844153, 11.010028694058748 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-02T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa230b1100d16c9e7193243'),
+    productId: 3242,
+    name: 'Dell Product 3242',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 37795,
+    quantity: 9,
+    rating: 3.9,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1042, name: 'Seller 42', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.41224335453188, 11.069468227942485 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-03-22T18:30:00.000Z')
+  }
+]
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.dropIndex("price_1")
+{
+  nIndexesWas: 2,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789016578, i: 8 }),
+    signature: {
+      hash: Binary.createFromBase64('gMAQtpxB/2nmcyX0TtLEPjXMDf8=', 0),
+      keyId: Long('7652463365813436428')
+    }
+  },
+  operationTime: Timestamp({ t: 1789016578, i: 8 })
+}
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> db.products.find( { category : "Laptops" , price : {$gt : 40000} } ).explain("executionStats")
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'indexes.products',
+    parsedQuery: {
+      '$and': [
+        { category: { '$eq': 'Laptops' } },
+        { price: { '$gt': 40000 } }
+      ]
+    },
+    indexFilterSet: false,
+    queryHash: '4241127D',
+    planCacheShapeHash: '4241127D',
+    planCacheKey: '5606FB29',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'COLLSCAN',
+      filter: {
+        '$and': [
+          { category: { '$eq': 'Laptops' } },
+          { price: { '$gt': 40000 } }
+        ]
+      },
+      direction: 'forward'
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 277,
+    executionTimeMillis: 7,
+    totalKeysExamined: 0,
+    totalDocsExamined: 5000,
+    executionStages: {
+      isCached: false,
+      stage: 'COLLSCAN',
+      filter: {
+        '$and': [
+          { category: { '$eq': 'Laptops' } },
+          { price: { '$gt': 40000 } }
+        ]
+      },
+      nReturned: 277,
+      executionTimeMillisEstimate: 8,
+      works: 5001,
+      advanced: 277,
+      needTime: 4723,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      direction: 'forward',
+      docsExamined: 5000
+    }
+  },
+  queryShapeHash: '5141DF2BAC5399DB4791B070EE16CA39FC6C36E78DA86077810D63B1C3BA9CB0',
+  command: {
+    find: 'products',
+    filter: { category: 'Laptops', price: { '$gt': 40000 } },
+    '$db': 'indexes'
+  },
+  serverInfo: {
+    host: 'ac-uialt1l-shard-00-02.efdnw2t.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789017411, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('xpxSa997dMgqA/wZgrfDm42ZH/I=', 0),
+      keyId: Long('7652463365813436428')
+    }
+  },
+  operationTime: Timestamp({ t: 1789017411, i: 1 })
+}
+Atlas atlas-dwq3vv-shard-0 [primary] indexes> 
