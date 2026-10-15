@@ -1,0 +1,105 @@
+MongoDB connected successfully!
+Database: college
+Collection: students
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 2
+
+===== ALL STUDENTS =====
+No students found.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 1
+
+===== ADD STUDENT =====
+Enter Student ID: 110
+Enter Student Name: Rahul Das
+Enter Department: CSE
+Enter CGPA: 9.5
+Enter Skills separated by commas: ML
+Student added successfully!
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 1
+
+===== ADD STUDENT =====
+Enter Student ID: 101
+Enter Student Name: Priyanshi Mathur
+Enter Department: CSE
+Enter CGPA: 9.7
+Enter Skills separated by commas: Data science
+Student added successfully!
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 1
+
+===== ADD STUDENT =====
+Enter Student ID: Pranav Sharma
+Enter Student Name: Pranva sharma
+Enter Department: CSE
+Enter CGPA: Web dev
+Invalid CGPA. Please enter a number.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 1
+
+===== ADD STUDENT =====
+Enter Student ID: 102
+Enter Student Name: Preksha Jain
+Enter Department: CSE
+Enter CGPA: Pata nhi
+Invalid CGPA. Please enter a number.
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 1
+
+===== ADD STUDENT =====
+Enter Student ID: Yash Bhavsar
+Enter Student Name: Yash Bhavsar
+Enter Department: CSE
+Enter CGPA: 8.9
+Enter Skills separated by commas: Majdoori
+Student added successfully!
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice: 2
+
+===== ALL STUDENTS =====
+{"_id": {"$oid": "6ad05d1a2f38756fa25336b0"}, "studentId": "110", "name": "Rahul Das", "department": "CSE", "cgpa": 9.5, "skills": ["ML"]}
+{"_id": {"$oid": "6ad05d402f38756fa25336b1"}, "studentId": "101", "name": "Priyanshi Mathur", "department": "CSE", "cgpa": 9.7, "skills": ["Data science"]}
+{"_id": {"$oid": "6ad05dbe2f38756fa25336b2"}, "studentId": "Yash Bhavsar", "name": "Yash Bhavsar", "department": "CSE", "cgpa": 8.9, "skills": ["Majdoori"]}
+
+===== STUDENT MANAGEMENT SYSTEM =====
+1. Add Student
+2. View Students
+3. Search Students
+4. Exit
+Enter your choice:
