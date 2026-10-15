@@ -1,0 +1,1160 @@
+Microsoft Windows [Version 10.0.26100.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\>mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+Enter password: ***************
+Current Mongosh Log ID: 6acc4ca984300d1d7a51d658
+Connecting to:          mongodb+srv://<credentials>@cluster0.35fwt2e.mongodb.net/?appName=mongosh+2.10.0
+Using MongoDB:          8.0.34 (API Version 1)
+Using Mongosh:          2.10.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-cqx81b-shard-0 [primary] test> use collegeDB
+|
+| db.createCollection("students")
+switched to db collegeDB
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> db.students.insertMany([
+|   {
+|     student_id: 101,
+|     name: "Aman",
+|     age: 20,
+|     gender: "Male",
+|     department: "CSE",
+|     marks: 85,
+|     city: "Jaipur",
+|     skills: ["Java", "MongoDB", "Python"],
+|     active: true
+|   },
+|   {
+|     student_id: 102,
+|     name: "Priya",
+|     age: 22,
+|     gender: "Female",
+|     department: "ECE",
+|     marks: 92,
+|     city: "Delhi",
+|     skills: ["Python", "C++"],
+|     active: true
+|   },
+|   {
+|     student_id: 103,
+|     name: "Rahul",
+|     age: 21,
+|     gender: "Male",
+|     department: "CSE",
+|     marks: 67,
+|     city: "Jaipur",
+|     skills: ["Java", "SQL"],
+|     active: false
+|   },
+|   {
+|     student_id: 104,
+|     name: "Neha",
+|     age: 23,
+|     gender: "Female",
+|     department: "IT",
+|     marks: 76,
+|     city: "Mumbai",
+|     skills: ["MongoDB", "JavaScript", "Python"],
+|     active: true
+|   },
+|   {
+|     student_id: 105,
+|     name: "Rohit",
+|     age: 19,
+|     gender: "Male",
+|     department: "CSE",
+|     marks: 88,
+|     city: "Delhi",
+|     skills: ["C++", "Python"],
+|     active: true
+|   }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6acc5cc284300d1d7a51d659'),
+    '1': ObjectId('6acc5cc284300d1d7a51d65a'),
+    '2': ObjectId('6acc5cc284300d1d7a51d65b'),
+    '3': ObjectId('6acc5cc284300d1d7a51d65c'),
+    '4': ObjectId('6acc5cc284300d1d7a51d65d')
+  }
+}
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> db.students.find()
+[
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d659'),
+    student_id: 101,
+    name: 'Aman',
+    age: 20,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 85,
+    city: 'Jaipur',
+    skills: [ 'Java', 'MongoDB', 'Python' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65a'),
+    student_id: 102,
+    name: 'Priya',
+    age: 22,
+    gender: 'Female',
+    department: 'ECE',
+    marks: 92,
+    city: 'Delhi',
+    skills: [ 'Python', 'C++' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65b'),
+    student_id: 103,
+    name: 'Rahul',
+    age: 21,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 67,
+    city: 'Jaipur',
+    skills: [ 'Java', 'SQL' ],
+    active: false
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65c'),
+    student_id: 104,
+    name: 'Neha',
+    age: 23,
+    gender: 'Female',
+    department: 'IT',
+    marks: 76,
+    city: 'Mumbai',
+    skills: [ 'MongoDB', 'JavaScript', 'Python' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65d'),
+    student_id: 105,
+    name: 'Rohit',
+    age: 19,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 88,
+    city: 'Delhi',
+    skills: [ 'C++', 'Python' ],
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> // $eq: marks equal to 85
+| db.students.find({marks: {$eq: 85}})
+|
+| // $gt: marks greater than 80
+| db.students.find({marks: {$gt: 80}})
+|
+| // $lt: age less than 21
+| db.students.find({age: {$lt: 21}})
+|
+| // $ne: department not equal to CSE
+| db.students.find({department: {$ne: "CSE"}})
+|
+| // $gte: marks greater than or equal to 85
+| db.students.find({marks: {$gte: 85}})
+|
+| // $lte: age less than or equal to 21
+| db.students.find({age: {$lte: 21}})
+[
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d659'),
+    student_id: 101,
+    name: 'Aman',
+    age: 20,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 85,
+    city: 'Jaipur',
+    skills: [ 'Java', 'MongoDB', 'Python' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65b'),
+    student_id: 103,
+    name: 'Rahul',
+    age: 21,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 67,
+    city: 'Jaipur',
+    skills: [ 'Java', 'SQL' ],
+    active: false
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65d'),
+    student_id: 105,
+    name: 'Rohit',
+    age: 19,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 88,
+    city: 'Delhi',
+    skills: [ 'C++', 'Python' ],
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> // $exists: documents containing the gender field
+| db.students.find({gender: {$exists: true}})
+|
+| // $type: marks field is a number
+| db.students.find({marks: {$type: "number"}})
+[
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d659'),
+    student_id: 101,
+    name: 'Aman',
+    age: 20,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 85,
+    city: 'Jaipur',
+    skills: [ 'Java', 'MongoDB', 'Python' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65a'),
+    student_id: 102,
+    name: 'Priya',
+    age: 22,
+    gender: 'Female',
+    department: 'ECE',
+    marks: 92,
+    city: 'Delhi',
+    skills: [ 'Python', 'C++' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65b'),
+    student_id: 103,
+    name: 'Rahul',
+    age: 21,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 67,
+    city: 'Jaipur',
+    skills: [ 'Java', 'SQL' ],
+    active: false
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65c'),
+    student_id: 104,
+    name: 'Neha',
+    age: 23,
+    gender: 'Female',
+    department: 'IT',
+    marks: 76,
+    city: 'Mumbai',
+    skills: [ 'MongoDB', 'JavaScript', 'Python' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65d'),
+    student_id: 105,
+    name: 'Rohit',
+    age: 19,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 88,
+    city: 'Delhi',
+    skills: [ 'C++', 'Python' ],
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> // $all: students having both Java and MongoDB
+| db.students.find({
+|   skills: {$all: ["Java", "MongoDB"]}
+| })
+|
+| // $size: students with exactly two skills
+| db.students.find({
+|   skills: {$size: 2}
+| })
+|
+| // $elemMatch: students with at least one array element
+| // matching all conditions; demonstrated with a numeric array below
+| db.students.insertOne({
+|   student_id: 106,
+|   name: "Karan",
+|   age: 22,
+|   department: "IT",
+|   marks: 81,
+|   city: "Pune",
+|   skills: ["Java", "Python"],
+|   test_scores: [65, 85, 95],
+|   active: true
+| })
+|
+| db.students.find({
+|   test_scores: {$elemMatch: {$gte: 80, $lt: 90}}
+| })
+[
+  {
+    _id: ObjectId('6acc5d3a84300d1d7a51d65e'),
+    student_id: 106,
+    name: 'Karan',
+    age: 22,
+    department: 'IT',
+    marks: 81,
+    city: 'Pune',
+    skills: [ 'Java', 'Python' ],
+    test_scores: [ 65, 85, 95 ],
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> // Sort by marks in ascending order
+| db.students.find().sort({marks: 1})
+|
+| // Sort by marks in descending order
+| db.students.find().sort({marks: -1})
+|
+| // Display only the top three students by marks
+| db.students.find().sort({marks: -1}).limit(3)
+|
+| // Skip the first two students
+| db.students.find().sort({student_id: 1}).skip(2)
+|
+| // Pagination: skip two and show two documents
+| db.students.find().sort({student_id: 1}).skip(2).limit(2)
+[
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65b'),
+    student_id: 103,
+    name: 'Rahul',
+    age: 21,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 67,
+    city: 'Jaipur',
+    skills: [ 'Java', 'SQL' ],
+    active: false
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65c'),
+    student_id: 104,
+    name: 'Neha',
+    age: 23,
+    gender: 'Female',
+    department: 'IT',
+    marks: 76,
+    city: 'Mumbai',
+    skills: [ 'MongoDB', 'JavaScript', 'Python' ],
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> // $set: change Aman's city
+| db.students.updateOne(
+|   {student_id: 101},
+|   {$set: {city: "Udaipur"}}
+| )
+|
+| // $inc: increase Aman's marks by 5
+| db.students.updateOne(
+|   {student_id: 101},
+|   {$inc: {marks: 5}}
+| )
+|
+| // $unset: remove the active field from Rahul's document
+| db.students.updateOne(
+|   {student_id: 103},
+|   {$unset: {active: ""}}
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> db.students.replaceOne(
+|   {student_id: 105},
+|   {
+|     student_id: 105,
+|     name: "Rohit",
+|     age: 19,
+|     department: "CSE",
+|     marks: 90,
+|     city: "Delhi",
+|     skills: ["Python", "C++"]
+|   }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> // Delete one matching document
+| db.students.deleteOne({student_id: 106})
+|
+| // Delete all students from Mumbai
+| db.students.deleteMany({city: "Mumbai"})
+|
+| // Check remaining documents
+| db.students.find()
+[
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d659'),
+    student_id: 101,
+    name: 'Aman',
+    age: 20,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 90,
+    city: 'Udaipur',
+    skills: [ 'Java', 'MongoDB', 'Python' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65a'),
+    student_id: 102,
+    name: 'Priya',
+    age: 22,
+    gender: 'Female',
+    department: 'ECE',
+    marks: 92,
+    city: 'Delhi',
+    skills: [ 'Python', 'C++' ],
+    active: true
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65b'),
+    student_id: 103,
+    name: 'Rahul',
+    age: 21,
+    gender: 'Male',
+    department: 'CSE',
+    marks: 67,
+    city: 'Jaipur',
+    skills: [ 'Java', 'SQL' ]
+  },
+  {
+    _id: ObjectId('6acc5cc284300d1d7a51d65d'),
+    student_id: 105,
+    name: 'Rohit',
+    age: 19,
+    department: 'CSE',
+    marks: 90,
+    city: 'Delhi',
+    skills: [ 'Python', 'C++' ]
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> db.students.aggregate([
+|   {$match: {active: true}},
+|   {$group: {
+|     _id: "$department",
+|     totalStudents: {$sum: 1},
+|     averageMarks: {$avg: "$marks"},
+|     highestMarks: {$max: "$marks"}
+|   }},
+|   {$project: {
+|     _id: 0,
+|     department: "$_id",
+|     totalStudents: 1,
+|     averageMarks: 1,
+|     highestMarks: 1
+|   }},
+|   {$sort: {averageMarks: -1}}
+| ])
+[
+  {
+    totalStudents: 1,
+    averageMarks: 92,
+    highestMarks: 92,
+    department: 'ECE'
+  },
+  {
+    totalStudents: 1,
+    averageMarks: 90,
+    highestMarks: 90,
+    department: 'CSE'
+  }
+]
+
+
+
+
+
+
+Atlas atlas-cqx81b-shard-0 [primary] collegeDB> use ecommerceDB
+switched to db ecommerceDB
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.customers.insertMany([
+|   {
+|     customer_id: 101,
+|     name: "Aman Sharma",
+|     age: 22,
+|     city: "Jaipur",
+|     email: "aman@gmail.com",
+|     membership: "Gold",
+|     active: true
+|   },
+|   {
+|     customer_id: 102,
+|     name: "Priya Verma",
+|     age: 25,
+|     city: "Delhi",
+|     email: "priya@gmail.com",
+|     membership: "Silver",
+|     active: true
+|   },
+|   {
+|     customer_id: 103,
+|     name: "Rahul Singh",
+|     age: 28,
+|     city: "Mumbai",
+|     email: "rahul@gmail.com",
+|     membership: "Gold",
+|     active: false
+|   },
+|   {
+|     customer_id: 104,
+|     name: "Neha Gupta",
+|     age: 21,
+|     city: "Jaipur",
+|     email: "neha@gmail.com",
+|     membership: "Bronze",
+|     active: true
+|   },
+|   {
+|     customer_id: 105,
+|     name: "Rohit Kumar",
+|     age: 30,
+|     city: "Delhi",
+|     email: "rohit@gmail.com",
+|     membership: "Silver",
+|     active: true
+|   }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6acc7f5884300d1d7a51d65f'),
+    '1': ObjectId('6acc7f5884300d1d7a51d660'),
+    '2': ObjectId('6acc7f5884300d1d7a51d661'),
+    '3': ObjectId('6acc7f5884300d1d7a51d662'),
+    '4': ObjectId('6acc7f5884300d1d7a51d663')
+  }
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.insertMany([
+|   {
+|     product_id: 201,
+|     name: "Laptop",
+|     category: "Electronics",
+|     price: 55000,
+|     stock: 10,
+|     tags: ["computer", "electronics"],
+|     rating: 4.5
+|   },
+|   {
+|     product_id: 202,
+|     name: "Smartphone",
+|     category: "Electronics",
+|     price: 25000,
+|     stock: 20,
+|     tags: ["mobile", "electronics"],
+|     rating: 4.2
+|   },
+|   {
+|     product_id: 203,
+|     name: "Headphones",
+|     category: "Accessories",
+|     price: 2000,
+|     stock: 50,
+|     tags: ["audio", "wireless"],
+|     rating: 4.0
+|   },
+|   {
+|     product_id: 204,
+|     name: "Office Chair",
+|     category: "Furniture",
+|     price: 7000,
+|     stock: 15,
+|     tags: ["office", "furniture"],
+|     rating: 4.3
+|   },
+|   {
+|     product_id: 205,
+|     name: "Keyboard",
+|     category: "Accessories",
+|     price: 1500,
+|     stock: 35,
+|     tags: ["computer", "wireless"],
+|     rating: 3.8
+|   }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6acc7f5f84300d1d7a51d664'),
+    '1': ObjectId('6acc7f5f84300d1d7a51d665'),
+    '2': ObjectId('6acc7f5f84300d1d7a51d666'),
+    '3': ObjectId('6acc7f5f84300d1d7a51d667'),
+    '4': ObjectId('6acc7f5f84300d1d7a51d668')
+  }
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.insertMany([
+|   {
+|     order_id: 301,
+|     customer_id: 101,
+|     products: [
+|       {product_id: 201, name: "Laptop", quantity: 1, price: 55000},
+|       {product_id: 203, name: "Headphones", quantity: 2, price: 2000}
+|     ],
+|     total_amount: 59000,
+|     status: "Delivered",
+|     order_date: ISODate("2026-09-10")
+|   },
+|   {
+|     order_id: 302,
+|     customer_id: 102,
+|     products: [
+|       {product_id: 202, name: "Smartphone", quantity: 1, price: 25000}
+|     ],
+|     total_amount: 25000,
+|     status: "Shipped",
+|     order_date: ISODate("2026-09-15")
+|   },
+|   {
+|     order_id: 303,
+|     customer_id: 103,
+|     products: [
+|       {product_id: 204, name: "Office Chair", quantity: 2, price: 7000}
+|     ],
+|     total_amount: 14000,
+|     status: "Cancelled",
+|     order_date: ISODate("2026-09-18")
+|   },
+|   {
+|     order_id: 304,
+|     customer_id: 104,
+|     products: [
+|       {product_id: 205, name: "Keyboard", quantity: 2, price: 1500},
+|       {product_id: 203, name: "Headphones", quantity: 1, price: 2000}
+|     ],
+|     total_amount: 5000,
+|     status: "Delivered",
+|     order_date: ISODate("2026-09-20")
+|   },
+|   {
+|     order_id: 305,
+|     customer_id: 105,
+|     products: [
+|       {product_id: 201, name: "Laptop", quantity: 1, price: 55000}
+|     ],
+|     total_amount: 55000,
+|     status: "Processing",
+|     order_date: ISODate("2026-09-25")
+|   }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6acc7f6b84300d1d7a51d669'),
+    '1': ObjectId('6acc7f6b84300d1d7a51d66a'),
+    '2': ObjectId('6acc7f6b84300d1d7a51d66b'),
+    '3': ObjectId('6acc7f6b84300d1d7a51d66c'),
+    '4': ObjectId('6acc7f6b84300d1d7a51d66d')
+  }
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> show collections
+|
+| db.customers.find()
+| db.products.find()
+| db.orders.find()
+customers
+orders
+products
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.aggregate([
+|   {
+|     $group: {
+|       _id: "$status",
+|       totalOrders: {$sum: 1},
+|       totalRevenue: {$sum: "$total_amount"}
+|     }
+|   },
+|   {
+|     $project: {
+|       _id: 0,
+|       status: "$_id",
+|       totalOrders: 1,
+|       totalRevenue: 1
+|     }
+|   },
+|   {
+|     $sort: {totalRevenue: -1}
+|   }
+| ])
+[
+  { totalOrders: 2, totalRevenue: 64000, status: 'Delivered' },
+  { totalOrders: 1, totalRevenue: 55000, status: 'Processing' },
+  { totalOrders: 1, totalRevenue: 25000, status: 'Shipped' },
+  { totalOrders: 1, totalRevenue: 14000, status: 'Cancelled' }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.find().pretty()
+[
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d664'),
+    product_id: 201,
+    name: 'Laptop',
+    category: 'Electronics',
+    price: 55000,
+    stock: 10,
+    tags: [ 'computer', 'electronics' ],
+    rating: 4.5
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d665'),
+    product_id: 202,
+    name: 'Smartphone',
+    category: 'Electronics',
+    price: 25000,
+    stock: 20,
+    tags: [ 'mobile', 'electronics' ],
+    rating: 4.2
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d666'),
+    product_id: 203,
+    name: 'Headphones',
+    category: 'Accessories',
+    price: 2000,
+    stock: 50,
+    tags: [ 'audio', 'wireless' ],
+    rating: 4
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d667'),
+    product_id: 204,
+    name: 'Office Chair',
+    category: 'Furniture',
+    price: 7000,
+    stock: 15,
+    tags: [ 'office', 'furniture' ],
+    rating: 4.3
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d668'),
+    product_id: 205,
+    name: 'Keyboard',
+    category: 'Accessories',
+    price: 1500,
+    stock: 35,
+    tags: [ 'computer', 'wireless' ],
+    rating: 3.8
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.customers.find({
+|   age: {$lt: 25}
+| })
+[
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d65f'),
+    customer_id: 101,
+    name: 'Aman Sharma',
+    age: 22,
+    city: 'Jaipur',
+    email: 'aman@gmail.com',
+    membership: 'Gold',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d662'),
+    customer_id: 104,
+    name: 'Neha Gupta',
+    age: 21,
+    city: 'Jaipur',
+    email: 'neha@gmail.com',
+    membership: 'Bronze',
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.find({
+|   $and: [
+|     {price: {$gt: 1000}},
+|     {stock: {$lt: 40}}
+|   ]
+| })
+[
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d664'),
+    product_id: 201,
+    name: 'Laptop',
+    category: 'Electronics',
+    price: 55000,
+    stock: 10,
+    tags: [ 'computer', 'electronics' ],
+    rating: 4.5
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d665'),
+    product_id: 202,
+    name: 'Smartphone',
+    category: 'Electronics',
+    price: 25000,
+    stock: 20,
+    tags: [ 'mobile', 'electronics' ],
+    rating: 4.2
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d667'),
+    product_id: 204,
+    name: 'Office Chair',
+    category: 'Furniture',
+    price: 7000,
+    stock: 15,
+    tags: [ 'office', 'furniture' ],
+    rating: 4.3
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d668'),
+    product_id: 205,
+    name: 'Keyboard',
+    category: 'Accessories',
+    price: 1500,
+    stock: 35,
+    tags: [ 'computer', 'wireless' ],
+    rating: 3.8
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.customers.find({
+|   $or: [
+|     {city: "Jaipur"},
+|     {city: "Delhi"}
+|   ]
+| })
+[
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d65f'),
+    customer_id: 101,
+    name: 'Aman Sharma',
+    age: 22,
+    city: 'Jaipur',
+    email: 'aman@gmail.com',
+    membership: 'Gold',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d660'),
+    customer_id: 102,
+    name: 'Priya Verma',
+    age: 25,
+    city: 'Delhi',
+    email: 'priya@gmail.com',
+    membership: 'Silver',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d662'),
+    customer_id: 104,
+    name: 'Neha Gupta',
+    age: 21,
+    city: 'Jaipur',
+    email: 'neha@gmail.com',
+    membership: 'Bronze',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d663'),
+    customer_id: 105,
+    name: 'Rohit Kumar',
+    age: 30,
+    city: 'Delhi',
+    email: 'rohit@gmail.com',
+    membership: 'Silver',
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.customers.find({
+|   email: {$exists: true}
+| })
+[
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d65f'),
+    customer_id: 101,
+    name: 'Aman Sharma',
+    age: 22,
+    city: 'Jaipur',
+    email: 'aman@gmail.com',
+    membership: 'Gold',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d660'),
+    customer_id: 102,
+    name: 'Priya Verma',
+    age: 25,
+    city: 'Delhi',
+    email: 'priya@gmail.com',
+    membership: 'Silver',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d661'),
+    customer_id: 103,
+    name: 'Rahul Singh',
+    age: 28,
+    city: 'Mumbai',
+    email: 'rahul@gmail.com',
+    membership: 'Gold',
+    active: false
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d662'),
+    customer_id: 104,
+    name: 'Neha Gupta',
+    age: 21,
+    city: 'Jaipur',
+    email: 'neha@gmail.com',
+    membership: 'Bronze',
+    active: true
+  },
+  {
+    _id: ObjectId('6acc7f5884300d1d7a51d663'),
+    customer_id: 105,
+    name: 'Rohit Kumar',
+    age: 30,
+    city: 'Delhi',
+    email: 'rohit@gmail.com',
+    membership: 'Silver',
+    active: true
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.find({
+|   tags: {$all: ["computer", "wireless"]}
+| })
+[
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d668'),
+    product_id: 205,
+    name: 'Keyboard',
+    category: 'Accessories',
+    price: 1500,
+    stock: 35,
+    tags: [ 'computer', 'wireless' ],
+    rating: 3.8
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.find().sort({
+|   price: -1
+| })
+[
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d664'),
+    product_id: 201,
+    name: 'Laptop',
+    category: 'Electronics',
+    price: 55000,
+    stock: 10,
+    tags: [ 'computer', 'electronics' ],
+    rating: 4.5
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d665'),
+    product_id: 202,
+    name: 'Smartphone',
+    category: 'Electronics',
+    price: 25000,
+    stock: 20,
+    tags: [ 'mobile', 'electronics' ],
+    rating: 4.2
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d667'),
+    product_id: 204,
+    name: 'Office Chair',
+    category: 'Furniture',
+    price: 7000,
+    stock: 15,
+    tags: [ 'office', 'furniture' ],
+    rating: 4.3
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d666'),
+    product_id: 203,
+    name: 'Headphones',
+    category: 'Accessories',
+    price: 2000,
+    stock: 50,
+    tags: [ 'audio', 'wireless' ],
+    rating: 4
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d668'),
+    product_id: 205,
+    name: 'Keyboard',
+    category: 'Accessories',
+    price: 1500,
+    stock: 35,
+    tags: [ 'computer', 'wireless' ],
+    rating: 3.8
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.find()
+|   .sort({price: -1})
+|   .limit(3)
+[
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d664'),
+    product_id: 201,
+    name: 'Laptop',
+    category: 'Electronics',
+    price: 55000,
+    stock: 10,
+    tags: [ 'computer', 'electronics' ],
+    rating: 4.5
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d665'),
+    product_id: 202,
+    name: 'Smartphone',
+    category: 'Electronics',
+    price: 25000,
+    stock: 20,
+    tags: [ 'mobile', 'electronics' ],
+    rating: 4.2
+  },
+  {
+    _id: ObjectId('6acc7f5f84300d1d7a51d667'),
+    product_id: 204,
+    name: 'Office Chair',
+    category: 'Furniture',
+    price: 7000,
+    stock: 15,
+    tags: [ 'office', 'furniture' ],
+    rating: 4.3
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.customers.updateOne(
+|   {customer_id: 101},
+|   {$set: {membership: "Platinum"}}
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.customers.findOne({customer_id: 101})
+{
+  _id: ObjectId('6acc7f5884300d1d7a51d65f'),
+  customer_id: 101,
+  name: 'Aman Sharma',
+  age: 22,
+  city: 'Jaipur',
+  email: 'aman@gmail.com',
+  membership: 'Platinum',
+  active: true
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.updateOne(
+|   {product_id: 201},
+|   {$inc: {stock: 10}}
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.findOne({product_id: 201})
+{
+  _id: ObjectId('6acc7f5f84300d1d7a51d664'),
+  product_id: 201,
+  name: 'Laptop',
+  category: 'Electronics',
+  price: 55000,
+  stock: 20,
+  tags: [ 'computer', 'electronics' ],
+  rating: 4.5
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.findOne({product_id: 201})
+{
+  _id: ObjectId('6acc7f5f84300d1d7a51d664'),
+  product_id: 201,
+  name: 'Laptop',
+  category: 'Electronics',
+  price: 55000,
+  stock: 20,
+  tags: [ 'computer', 'electronics' ],
+  rating: 4.5
+}
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.deleteOne({
+|   order_id: 302
+| })
+{ acknowledged: true, deletedCount: 1 }
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.deleteOne({
+|   order_id: 302
+| })
+{ acknowledged: true, deletedCount: 0 }
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.find({
+|   order_id: 302
+| })
+
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.aggregate([
+|   {
+|     $group: {
+|       _id: "$status",
+|       totalOrders: {$sum: 1},
+|       totalSales: {$sum: "$total_amount"}
+|     }
+|   }
+| ])
+[
+  { _id: 'Delivered', totalOrders: 2, totalSales: 64000 },
+  { _id: 'Cancelled', totalOrders: 1, totalSales: 14000 },
+  { _id: 'Processing', totalOrders: 1, totalSales: 55000 }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.products.aggregate([
+|   {
+|     $project: {
+|       _id: 0,
+|       name: 1,
+|       price: 1
+|     }
+|   }
+| ])
+[
+  { name: 'Laptop', price: 55000 },
+  { name: 'Smartphone', price: 25000 },
+  { name: 'Headphones', price: 2000 },
+  { name: 'Office Chair', price: 7000 },
+  { name: 'Keyboard', price: 1500 }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB> db.orders.aggregate([
+|   {
+|     $match: {
+|       status: "Delivered"
+|     }
+|   },
+|   {
+|     $group: {
+|       _id: null,
+|       totalDeliveredOrders: {$sum: 1},
+|       totalRevenue: {$sum: "$total_amount"},
+|       averageOrderValue: {$avg: "$total_amount"}
+|     }
+|   },
+|   {
+|     $project: {
+|       _id: 0,
+|       totalDeliveredOrders: 1,
+|       totalRevenue: 1,
+|       averageOrderValue: 1
+|     }
+|   }
+| ])
+[
+  {
+    totalDeliveredOrders: 2,
+    totalRevenue: 64000,
+    averageOrderValue: 32000
+  }
+]
+Atlas atlas-cqx81b-shard-0 [primary] ecommerceDB>
