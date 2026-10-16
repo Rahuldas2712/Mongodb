@@ -1,10 +1,10 @@
 Microsoft Windows [Version 10.0.26100.9550]
 (c) Microsoft Corporation. All rights reserved.
 
-C:\>mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+
 Enter password: ***************
-Current Mongosh Log ID: 6acc4ca984300d1d7a51d658
-Connecting to:          mongodb+srv://<credentials>@cluster0.35fwt2e.mongodb.net/?appName=mongosh+2.10.0
+Current Mongosh Log ID: 
+
 Using MongoDB:          8.0.34 (API Version 1)
 Using Mongosh:          2.10.0
 
