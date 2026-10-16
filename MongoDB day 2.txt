@@ -1,56 +1,5 @@
-Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.
 
-PS C:\WINDOWS\system32> mvn -version
-Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
-Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.16
-Java version: 17.0.16, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot
-Default locale: en_IN, p              ng: Cp1252
-PS C:\WINDOWS\system32> ersion: "10.0", arch: "amd64", family: "windows"
-PS C:\WINDOWS\system32>
-PS C:\WINDOWS\system32> cd C:\Users\ff
-PS C:\Users\ff> mkdir JavaMongoDB
-
-
-    Directory: C:\Users\ff
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        13-10-2026     09:10                JavaMongoDB
-
-
-PS C:\Users\ff> cd JavaMongoDB
-PS C:\Users\ff\JavaMongoDB> mvn -version
-Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
-Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.16
-Java version: 17.0.16, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot
-Default locale: en_IN, platform encoding: Cp1252
-OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
-PS C:\Users\ff\JavaMongoDB> mvn archetype:generate "-DgroupId=com.example" "-DartifactId=mongodb-demo" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
-[INFO] Scanning for projects...
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom (5.3 kB at 5.6 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom (9.9 kB at 92 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/35/maven-parent-35.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/35/maven-parent-35.pom (45 kB at 348 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/25/apache-25.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/25/apache-25.pom (21 kB at 245 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar (36 kB at 117 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/3.1.4/maven-install-plugin-3.1.4.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/3.1.4/maven-install-plugin-3.1.4.pom (8.1 kB at 65 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/43/maven-plugins-43.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/43/maven-plugins-43.pom (7.5 kB at 120 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/43/maven-parent-43.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/43/maven-parent-43.pom (50 kB at 384 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom (24 kB at 345 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom
-Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom (5.6 kB at 97 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/3.1.4/maven-install-plugin-3.1.4.jar
-Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/3.1.4/maven-install-plugin-3.1.4.jar (33 kB at 233 kB/s)
+kB/s)
 Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/3.1.4/maven-deploy-plugin-3.1.4.pom
 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/3.1.4/maven-deploy-plugin-3.1.4.pom (9.2 kB at 114 kB/s)
 Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/3.1.4/maven-deploy-plugin-3.1.4.jar
@@ -361,47 +310,6 @@ Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/a
 [INFO] Total time:  01:30 min
 [INFO] Finished at: 2026-10-13T09:12:26+05:30
 [INFO] ------------------------------------------------------------------------
-PS C:\Users\ff\JavaMongoDB> cd mongodb-demo
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> dir
-
-
-    Directory: C:\Users\ff\JavaMongoDB\mongodb-demo
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        13-10-2026     09:12                src
--a----        13-10-2026     09:12            666 pom.xml
-
-
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> cd C:\Users\ff\JavaMongoDB\mongodb-demo
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> dir
-
-
-    Directory: C:\Users\ff\JavaMongoDB\mongodb-demo
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        13-10-2026     09:12                src
--a----        13-10-2026     09:12            666 pom.xml
-
-
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> <dependency>
->>     <groupId>org.mongodb</groupId>
->>     <artifactId>mongodb-driver-sync</artifactId>
->>     <version>5.5.1</version>
->> </dependency>
-< : The term '<' is not recognized as the name of a cmdlet, function, script
-file, or operable program. Check the spelling of the name, or if a path was
-included, verify that the path is correct and try again.
-At line:1 char:1
-+ <dependency>
-+ ~
-    + CategoryInfo          : ObjectNotFound: (<:String) [], CommandNotFoundExce
-   ption
-    + FullyQualifiedErrorId : CommandNotFoundException
-
 < : The term '<' is not recognized as the name of a cmdlet, function, script
 file, or operable program. Check the spelling of the name, or if a path was
 included, verify that the path is correct and try again.
@@ -904,11 +812,3 @@ java.lang.IllegalThreadStateException
     at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
     at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
     at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
-    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  19.405 s
-[INFO] Finished at: 2026-10-13T09:53:30+05:30
-[INFO] ------------------------------------------------------------------------
-PS C:\Users\ff\JavaMongoDB\mongodb-demo>
