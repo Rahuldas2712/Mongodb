@@ -1,0 +1,263 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\system32> cd C:\Users\ff\JavaMongoDB\mongodb-demo
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> java -version
+>> mvn -version
+java version "26.0.2" 2026-07-21
+Java(TM) SE Runtime Environment (build 26.0.2+10-55)
+Java HotSpot(TM) 64-Bit Server VM (build 26.0.2+10-55, mixed mode, sharing)
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.16
+Java version: 17.0.16, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot
+Default locale: en_IN, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> New-Item -ItemType Directory -Force src\main\java\com\example
+
+
+    Directory: C:\Users\ff\JavaMongoDB\mongodb-demo\src\main\java\com
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13-10-2026     09:12                example
+
+
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user"
+At line:1 char:30
++ ... = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token 'mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1
+--username 2024pceacspreksha126_db_user"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordExce
+   ption
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+Enter password: *******************
+MongoServerError: bad auth : authentication failed
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> cd C:\Users\ff\JavaMongoDB\mongodb-demo
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
+Enter password: *******************
+MongoServerError: bad auth : authentication failed
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn clean compile
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:mongodb-demo >----------------------
+[INFO] Building mongodb-demo 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.2.0:clean (default-clean) @ mongodb-demo ---
+[INFO] Deleting C:\Users\ff\JavaMongoDB\mongodb-demo\target
+[INFO]
+[INFO] --- resources:3.4.0:resources (default-resources) @ mongodb-demo ---
+[INFO] skip non existing resourceDirectory C:\Users\ff\JavaMongoDB\mongodb-demo\src\main\resources
+[INFO]
+[INFO] --- compiler:3.15.0:compile (default-compile) @ mongodb-demo ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 17] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.856 s
+[INFO] Finished at: 2026-10-16T08:57:04+05:30
+[INFO] ------------------------------------------------------------------------
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> {
+>>   "studentId": "STU101",
+>>   "name": "Rahul Sharma",
+>>   "email": "rahul@example.com",
+>>   "department": "CSE",
+>>   "cgpa": 8.5,
+>>   "skills": ["Java", "MongoDB", "SQL"],
+>>   "placed": false
+>> }
+At line:2 char:14
++   "studentId": "STU101",
++              ~
+Unexpected token ':' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordExce
+   ption
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongodb+srv://2024pceacspreksha126_db_user:i97MZ%26tw%40ev2Vt7@cluster0.35fwt2e.mongodb.net/?retryWrites=true&w=majority"
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> cd C:\Users\ff\JavaMongoDB\mongodb-demo
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn exec:java
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:mongodb-demo >----------------------
+[INFO] Building mongodb-demo 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec:3.5.0:java (default-cli) @ mongodb-demo ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.875 s
+[INFO] Finished at: 2026-10-16T09:03:47+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.5.0:java (default-cli) on project mongodb-demo: The parameters 'mainClass' for goal org.codehaus.mojo:exec-maven-plugin:3.5.0:java are missing or invalid -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginParameterException
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> notepad pom.xml
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn clean compile
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Users\ff\JavaMongoDB\mongodb-demo\pom.xml: processing instruction can not have PITarget with reserved xml name (position: START_DOCUMENT seen \r\n<?xml ... @2:7)  @ line 2, column 7
+ @
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]
+[ERROR]   The project  (C:\Users\ff\JavaMongoDB\mongodb-demo\pom.xml) has 1 error
+[ERROR]     Non-parseable POM C:\Users\ff\JavaMongoDB\mongodb-demo\pom.xml: processing instruction can not have PITarget with reserved xml name (position: START_DOCUMENT seen \r\n<?xml ... @2:7)  @ line 2, column 7 -> [Help 2]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> notepad pom.xml
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn clean compile
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:mongodb-demo >----------------------
+[INFO] Building mongodb-demo 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.14.0/maven-compiler-plugin-3.14.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.14.0/maven-compiler-plugin-3.14.0.pom (9.5 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.14.0/maven-compiler-plugin-3.14.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.14.0/maven-compiler-plugin-3.14.0.jar (83 kB at 226 kB/s)
+[INFO]
+[INFO] --- clean:3.2.0:clean (default-clean) @ mongodb-demo ---
+[INFO] Deleting C:\Users\ff\JavaMongoDB\mongodb-demo\target
+[INFO]
+[INFO] --- resources:3.4.0:resources (default-resources) @ mongodb-demo ---
+[INFO] skip non existing resourceDirectory C:\Users\ff\JavaMongoDB\mongodb-demo\src\main\resources
+[INFO]
+[INFO] --- compiler:3.14.0:compile (default-compile) @ mongodb-demo ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.pom (4.1 kB at 9.2 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.4.0/plexus-languages-1.4.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.4.0/plexus-languages-1.4.0.pom (3.9 kB at 17 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom (1.4 kB at 30 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom (7.6 kB at 146 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/17/plexus-17.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/17/plexus-17.pom (28 kB at 470 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom (7.8 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom (1.3 kB at 3.3 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom (1.3 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom (1.6 kB at 8.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.jar (57 kB at 136 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar (26 kB at 408 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar (5.2 kB at 35 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar (29 kB at 126 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar (193 kB at 247 kB/s)
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 17] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.316 s
+[INFO] Finished at: 2026-10-16T09:10:26+05:30
+[INFO] ------------------------------------------------------------------------
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn exec:java
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:mongodb-demo >----------------------
+[INFO] Building mongodb-demo 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec:3.5.0:java (default-cli) @ mongodb-demo ---
+Oct 16, 2026 9:10:38 AM com.mongodb.internal.diagnostics.logging.Loggers shouldUseSLF4J
+WARNING: SLF4J not found on the classpath.  Logging is disabled for the 'org.mongodb.driver' component
+Connected to MongoDB successfully!
+
+===== STUDENT PLACEMENT SYSTEM =====
+1. Student Module
+2. Company Module
+3. Job Drive Module
+4. Application Module
+5. Candidate Search
+6. Placement Analytics
+7. View All Records
+0. Exit
+Enter choice: 1
+
+1. Add Student
+2. View Students
+3. Update CGPA
+4. Delete Student
+Choice: 2
+{"_id": {"$oid": "6ad08277e7117c2809bf0537"}, "studentId": "101", "name": "Preksha", "email": "prek@gmail.com", "department": "cse", "cgpa": 9.0, "skills": ["java", "c#"], "placed": false}
+
+===== STUDENT PLACEMENT SYSTEM =====
+1. Student Module
+2. Company Module
+3. Job Drive Module
+4. Application Module
+5. Candidate Search
+6. Placement Analytics
+7. View All Records
+0. Exit
+Enter choice: 0
+Program closed.
+[WARNING] thread Thread[Thread-2,5,com.example.App] was interrupted but is still alive after waiting at least 15000msecs
+[WARNING] thread Thread[Thread-2,5,com.example.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[BufferPoolPruner-1-thread-1,5,com.example.App] will linger despite being asked to die via interruption
+[WARNING] NOTE: 2 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[WARNING] Couldn't destroy threadgroup org.codehaus.mojo.exec.ExecJavaMojo$IsolatedThreadGroup[name=com.example.App,maxpri=10]
+java.lang.IllegalThreadStateException
+    at java.lang.ThreadGroup.destroy (ThreadGroup.java:803)
+    at org.codehaus.mojo.exec.ExecJavaMojo.execute (ExecJavaMojo.java:330)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  48.048 s
+[INFO] Finished at: 2026-10-16T09:11:26+05:30
+[INFO] ------------------------------------------------------------------------
+PS C:\Users\ff\JavaMongoDB\mongodb-demo>
