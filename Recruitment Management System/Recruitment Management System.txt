@@ -7,38 +7,13 @@ PS C:\Users\ff\JavaMongoDB\mongodb-demo> java -version
 java version "26.0.2" 2026-07-21
 Java(TM) SE Runtime Environment (build 26.0.2+10-55)
 Java HotSpot(TM) 64-Bit Server VM (build 26.0.2+10-55, mixed mode, sharing)
-Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
-Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.16
-Java version: 17.0.16, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot
-Default locale: en_IN, platform encoding: Cp1252
+Apache Maven 3.9.16 ()
+Maven home: 
+Java version: 17.0.16, vendor: 
+Default locale: en_IN, platform encoding: 
 OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> New-Item -ItemType Directory -Force src\main\java\com\example
+PS C:\Users\ff\JavaMongoDB\mongodb-demo> New-Item -ItemType Directory 
 
-
-    Directory: C:\Users\ff\JavaMongoDB\mongodb-demo\src\main\java\com
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        13-10-2026     09:12                example
-
-
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user"
-At line:1 char:30
-+ ... = "mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion ...
-+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Unexpected token 'mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1
---username 2024pceacspreksha126_db_user"' in expression or statement.
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordExce
-   ption
-    + FullyQualifiedErrorId : UnexpectedToken
-
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
-Enter password: *******************
-MongoServerError: bad auth : authentication failed
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> cd C:\Users\ff\JavaMongoDB\mongodb-demo
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = mongosh "mongodb+srv://cluster0.35fwt2e.mongodb.net/" --apiVersion 1 --username 2024pceacspreksha126_db_user
-Enter password: *******************
 MongoServerError: bad auth : authentication failed
 PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn clean compile
 [INFO] Scanning for projects...
@@ -52,7 +27,7 @@ PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn clean compile
 [INFO] Deleting C:\Users\ff\JavaMongoDB\mongodb-demo\target
 [INFO]
 [INFO] --- resources:3.4.0:resources (default-resources) @ mongodb-demo ---
-[INFO] skip non existing resourceDirectory C:\Users\ff\JavaMongoDB\mongodb-demo\src\main\resources
+
 [INFO]
 [INFO] --- compiler:3.15.0:compile (default-compile) @ mongodb-demo ---
 [INFO] Recompiling the module because of changed source code.
@@ -80,9 +55,6 @@ Unexpected token ':' in expression or statement.
    ption
     + FullyQualifiedErrorId : UnexpectedToken
 
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> $env:MONGODB_URI = "mongodb+srv://2024pceacspreksha126_db_user:i97MZ%26tw%40ev2Vt7@cluster0.35fwt2e.mongodb.net/?retryWrites=true&w=majority"
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> cd C:\Users\ff\JavaMongoDB\mongodb-demo
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn exec:java
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ----------------------< com.example:mongodb-demo >----------------------
@@ -103,10 +75,7 @@ PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn exec:java
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
 [ERROR]
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginParameterException
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> notepad pom.xml
-PS C:\Users\ff\JavaMongoDB\mongodb-demo> mvn clean compile
-[INFO] Scanning for projects...
+
 [ERROR] [ERROR] Some problems were encountered while processing the POMs:
 [FATAL] Non-parseable POM C:\Users\ff\JavaMongoDB\mongodb-demo\pom.xml: processing instruction can not have PITarget with reserved xml name (position: START_DOCUMENT seen \r\n<?xml ... @2:7)  @ line 2, column 7
  @
